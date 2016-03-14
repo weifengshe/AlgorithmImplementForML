@@ -1,0 +1,280 @@
+
+
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.565200602 seconds
+Trained BackProp in 2.046532695 seconds
+Trained BackProp in 1.727414747 seconds
+Trained RHC in 1.614319861 seconds
+Trained SA in 1.670371414 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.52595156 False Positive Rate: 0.11047836
+  Accuracy: 0.79948586 Recall: 0.52595156 Precision: 0.61044174 F1: 0.5650558
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.52249134 False Positive Rate: 0.123006836
+  Accuracy: 0.7892031 Recall: 0.52249134 Precision: 0.58301157 F1: 0.55109495
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.09342561 False Positive Rate: 0.010250569
+  Accuracy: 0.76778066 Recall: 0.09342561 Precision: 0.75 F1: 0.16615385
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.4083045 False Positive Rate: 0.7471526
+  Accuracy: 0.29134533 Recall: 0.4083045 Precision: 0.15245478 F1: 0.22201316
+
+## 2nd
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.544157236 seconds
+Trained BackProp in 2.280327112 seconds
+Trained BackProp in 1.639705913 seconds
+Trained RHC in 1.718229171 seconds
+Trained SA in 1.85884237 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.51903117 False Positive Rate: 0.12186788
+  Accuracy: 0.7892031 Recall: 0.51903117 Precision: 0.58365756 F1: 0.5494505
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.53287196 False Positive Rate: 0.12528473
+  Accuracy: 0.79006 Recall: 0.53287196 Precision: 0.5833333 F1: 0.5569621
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.0 False Positive Rate: 0.0
+  Accuracy: 0.75235647 Recall: 0.0 Precision: NaN F1: NaN
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 1.0 False Positive Rate: 1.0
+  Accuracy: 0.24764353 Recall: 1.0 Precision: 0.24764353 F1: 0.39697805
+
+ ## 3rd 
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Trained BackProp in 1.698781745 seconds
+Trained BackProp in 1.513608289 seconds
+Trained RHC in 1.501113418 seconds
+Trained SA in 1.637003021 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.51557094 False Positive Rate: 0.113895215
+  Accuracy: 0.7943445 Recall: 0.51557094 Precision: 0.59839356 F1: 0.5539033
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.51903117 False Positive Rate: 0.12186788
+  Accuracy: 0.7892031 Recall: 0.51903117 Precision: 0.58365756 F1: 0.5494505
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.017301038 False Positive Rate: 0.006833713
+  Accuracy: 0.7514996 Recall: 0.017301038 Precision: 0.45454547 F1: 0.03333333
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.8269896 False Positive Rate: 0.64692485
+  Accuracy: 0.47043702 Recall: 0.8269896 Precision: 0.2961586 F1: 0.4361314
+
+## 4th
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.579426307 seconds
+Trained BackProp in 1.577731756 seconds
+Trained BackProp in 1.365988582 seconds
+Trained RHC in 1.347969 seconds
+Trained SA in 1.447962913 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.5294118 False Positive Rate: 0.12642369
+  Accuracy: 0.7883462 Recall: 0.5294118 Precision: 0.57954544 F1: 0.5533454
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.5605536 False Positive Rate: 0.14236902
+  Accuracy: 0.7840617 Recall: 0.5605536 Precision: 0.5644599 F1: 0.56249994
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.10380623 False Positive Rate: 0.020501139
+  Accuracy: 0.7626392 Recall: 0.10380623 Precision: 0.625 F1: 0.17804155
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.17301038 False Positive Rate: 0.37471527
+  Accuracy: 0.51328194 Recall: 0.17301038 Precision: 0.13192612 F1: 0.1497006
+
+ ## 5th
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.354348742 seconds
+Trained BackProp in 1.576684101 seconds
+Trained BackProp in 1.363576702 seconds
+Trained RHC in 1.338878859 seconds
+Trained SA in 1.461794379 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.51557094 False Positive Rate: 0.12414578
+  Accuracy: 0.7866324 Recall: 0.51557094 Precision: 0.57751936 F1: 0.5447898
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.5432526 False Positive Rate: 0.12984055
+  Accuracy: 0.7892031 Recall: 0.5432526 Precision: 0.5793358 F1: 0.56071424
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.062283736 False Positive Rate: 0.014806378
+  Accuracy: 0.756641 Recall: 0.062283736 Precision: 0.58064514 F1: 0.1125
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.0 False Positive Rate: 0.0
+  Accuracy: 0.75235647 Recall: 0.0 Precision: NaN F1: NaN
+
+# 6th
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.428509121 seconds
+Trained BackProp in 1.884046902 seconds
+Trained BackProp in 1.402337388 seconds
+Trained RHC in 1.401312573 seconds
+Trained SA in 1.476554759 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.53287196 False Positive Rate: 0.12756264
+  Accuracy: 0.7883462 Recall: 0.53287196 Precision: 0.57894737 F1: 0.554955
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.5432526 False Positive Rate: 0.12756264
+  Accuracy: 0.79091686 Recall: 0.5432526 Precision: 0.58364314 F1: 0.56272405
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.0 False Positive Rate: 0.0
+  Accuracy: 0.75235647 Recall: 0.0 Precision: NaN F1: NaN
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 1.0 False Positive Rate: 1.0
+  Accuracy: 0.24764353 Recall: 1.0 Precision: 0.24764353 F1: 0.39697805
+
+
+# 7 th
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.54032686 seconds
+Trained BackProp in 2.50627439 seconds
+Trained BackProp in 1.742908878 seconds
+Trained RHC in 1.745299805 seconds
+Trained SA in 2.127317753 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.52595156 False Positive Rate: 0.11275627
+  Accuracy: 0.79777205 Recall: 0.52595156 Precision: 0.6055777 F1: 0.56296295
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.5294118 False Positive Rate: 0.11503417
+  Accuracy: 0.7969152 Recall: 0.5294118 Precision: 0.6023622 F1: 0.563536
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.0 False Positive Rate: 0.0
+  Accuracy: 0.75235647 Recall: 0.0 Precision: NaN F1: NaN
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 1.0 False Positive Rate: 1.0
+  Accuracy: 0.24764353 Recall: 1.0 Precision: 0.24764353 F1: 0.39697805
+
+# 8
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.366122319 seconds
+Trained BackProp in 1.574752802 seconds
+Trained BackProp in 1.284116103 seconds
+Trained RHC in 1.295549167 seconds
+Trained SA in 1.412837917 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.52249134 False Positive Rate: 0.11617312
+  Accuracy: 0.7943445 Recall: 0.52249134 Precision: 0.59683794 F1: 0.5571956
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.5363322 False Positive Rate: 0.1287016
+  Accuracy: 0.7883462 Recall: 0.5363322 Precision: 0.57835823 F1: 0.556553
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.027681662 False Positive Rate: 0.0
+  Accuracy: 0.75921166 Recall: 0.027681662 Precision: 1.0 F1: 0.053872053
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 1.0 False Positive Rate: 1.0
+  Accuracy: 0.24764353 Recall: 1.0 Precision: 0.24764353 F1: 0.39697805
+
+# 9
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.361362115 seconds
+Trained BackProp in 1.961410513 seconds
+Trained BackProp in 1.485235666 seconds
+Trained RHC in 1.465024448 seconds
+Trained SA in 1.598476403 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.5121107 False Positive Rate: 0.11617312
+  Accuracy: 0.7917738 Recall: 0.5121107 Precision: 0.592 F1: 0.5491651
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.51557094 False Positive Rate: 0.107061505
+  Accuracy: 0.79948586 Recall: 0.51557094 Precision: 0.6131687 F1: 0.56015044
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.051903114 False Positive Rate: 0.0
+  Accuracy: 0.7652099 Recall: 0.051903114 Precision: 1.0 F1: 0.09868421
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.9550173 False Positive Rate: 0.8041002
+  Accuracy: 0.38389033 Recall: 0.9550173 Precision: 0.28105906 F1: 0.43430367
+
+# 9 
+oaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.742427806 seconds
+Trained BackProp in 2.152169237 seconds
+Trained BackProp in 1.867897389 seconds
+Trained RHC in 1.688063091 seconds
+Trained SA in 1.758464625 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.52595156 False Positive Rate: 0.11617312
+  Accuracy: 0.79520136 Recall: 0.52595156 Precision: 0.5984252 F1: 0.5598527
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.4982699 False Positive Rate: 0.11161731
+  Accuracy: 0.7917738 Recall: 0.4982699 Precision: 0.59504133 F1: 0.5423729
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.0 False Positive Rate: 0.0
+  Accuracy: 0.75235647 Recall: 0.0 Precision: NaN F1: NaN
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.9965398 False Positive Rate: 0.9988611
+  Accuracy: 0.24764353 Recall: 0.9965398 Precision: 0.2472103 F1: 0.39614853
+
+# 10
+Loaded 1750 train samples and 1167 test samples
+-1.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000 : 0.000000
+Created networks in 0.36673258 seconds
+Trained BackProp in 1.514028396 seconds
+Trained BackProp in 1.342023181 seconds
+Trained RHC in 1.347046499 seconds
+Trained SA in 1.421038163 seconds
+--- BackProp ---
+Threshold: 0.4
+  True Positive Rate: 0.52595156 False Positive Rate: 0.1287016
+  Accuracy: 0.7857755 Recall: 0.52595156 Precision: 0.5735849 F1: 0.5487365
+--- RHC ---
+Threshold: 0.4
+  True Positive Rate: 0.48442906 False Positive Rate: 0.11161731
+  Accuracy: 0.7883462 Recall: 0.48442906 Precision: 0.5882353 F1: 0.5313093
+--- SA ---
+Threshold: 0.4
+  True Positive Rate: 0.034602076 False Positive Rate: 0.010250569
+  Accuracy: 0.75321335 Recall: 0.034602076 Precision: 0.5263158 F1: 0.064935066
+--- GA ---
+Threshold: 0.4
+  True Positive Rate: 0.9480969 False Positive Rate: 0.9703872
+  Accuracy: 0.2570694 Recall: 0.9480969 Precision: 0.24333926 F1: 0.38727912
+
+
+
+
+
