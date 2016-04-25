@@ -1,0 +1,275 @@
+/////Easy Grid World Analysis/////
+
+This is your grid world:
+[0,0,0,0,0]
+[0,1,1,1,0]
+[0,0,0,1,0]
+[1,0,1,1,0]
+[0,0,0,0,0]
+
+
+
+//Value Iteration Analysis//
+Passes: 1
+Passes: 2
+Passes: 3
+Passes: 4
+Passes: 5
+Passes: 6
+Passes: 7
+Passes: 8
+Passes: 9
+Passes: 10
+Passes: 11
+Passes: 12
+Passes: 13
+Passes: 14
+Passes: 15
+Passes: 16
+Passes: 17
+Passes: 18
+Passes: 19
+Passes: 20
+Passes: 21
+Passes: 22
+Passes: 23
+Passes: 24
+Passes: 25
+Passes: 26
+Passes: 27
+Passes: 28
+Passes: 29
+Passes: 30
+Passes: 31
+Passes: 32
+Passes: 33
+Passes: 34
+Passes: 35
+Passes: 36
+Passes: 37
+Passes: 38
+Passes: 39
+Passes: 40
+Passes: 41
+Passes: 42
+Passes: 43
+Passes: 44
+Passes: 45
+Passes: 46
+Passes: 47
+Passes: 48
+Passes: 49
+Passes: 50
+Passes: 51
+Passes: 52
+Passes: 53
+Passes: 54
+Passes: 55
+Passes: 56
+Passes: 57
+Passes: 58
+Passes: 59
+Passes: 60
+Passes: 61
+Passes: 62
+Passes: 63
+Passes: 64
+Passes: 65
+Passes: 66
+Passes: 67
+Passes: 68
+Passes: 69
+Passes: 70
+Passes: 71
+Passes: 72
+Passes: 73
+Passes: 74
+Passes: 75
+Passes: 76
+Passes: 77
+Passes: 78
+Passes: 79
+Passes: 80
+Passes: 81
+Passes: 82
+Passes: 83
+Passes: 84
+Passes: 85
+Passes: 86
+Passes: 87
+Passes: 88
+Passes: 89
+Passes: 90
+Passes: 91
+Passes: 92
+Passes: 93
+Passes: 94
+Passes: 95
+Passes: 96
+Passes: 97
+Passes: 98
+Passes: 99
+Passes: 100
+Value Iteration,941,123,170,27,12,9,13,10,19,10,12,17,16,14,20,13,12,10,9,11,9,11,10,12,10,9,11,12,12,9,13,19,9,12,11,17,13,9,13,11,10,18,13,9,11,16,9,13,11,11,11,10,14,9,11,17,11,10,10,12,12,9,9,12,9,13,11,17,14,10,9,14,9,14,12,12,11,9,12,15,10,12,10,13,14,13,11,11,12,16,13,11,11,11,16,21,12,11,9,10
+
+This is your optimal policy:
+num of rows in policy is 5
+[>,>,>,>,v]
+[^,*,*,*,^]
+[^,<,<,*,^]
+[*,^,*,*,^]
+[>,>,>,>,^]
+
+
+
+Num generated: 216; num unique: 18
+//Policy Iteration Analysis//
+Total policy iterations: 1
+Total policy iterations: 2
+Total policy iterations: 3
+Total policy iterations: 4
+Total policy iterations: 5
+Total policy iterations: 6
+Total policy iterations: 7
+Total policy iterations: 8
+Total policy iterations: 9
+Total policy iterations: 10
+Total policy iterations: 11
+Total policy iterations: 12
+Total policy iterations: 13
+Total policy iterations: 14
+Total policy iterations: 15
+Total policy iterations: 16
+Total policy iterations: 17
+Total policy iterations: 18
+Total policy iterations: 19
+Total policy iterations: 20
+Total policy iterations: 21
+Total policy iterations: 22
+Total policy iterations: 23
+Total policy iterations: 24
+Total policy iterations: 25
+Total policy iterations: 26
+Total policy iterations: 27
+Total policy iterations: 28
+Total policy iterations: 29
+Total policy iterations: 30
+Total policy iterations: 31
+Total policy iterations: 32
+Total policy iterations: 33
+Total policy iterations: 34
+Total policy iterations: 35
+Total policy iterations: 36
+Total policy iterations: 37
+Total policy iterations: 38
+Total policy iterations: 39
+Total policy iterations: 40
+Total policy iterations: 41
+Total policy iterations: 42
+Total policy iterations: 43
+Total policy iterations: 44
+Total policy iterations: 45
+Total policy iterations: 46
+Total policy iterations: 47
+Total policy iterations: 48
+Total policy iterations: 49
+Total policy iterations: 50
+Total policy iterations: 51
+Total policy iterations: 52
+Total policy iterations: 53
+Total policy iterations: 54
+Total policy iterations: 55
+Total policy iterations: 56
+Total policy iterations: 57
+Total policy iterations: 58
+Total policy iterations: 59
+Total policy iterations: 60
+Total policy iterations: 61
+Total policy iterations: 62
+Total policy iterations: 63
+Total policy iterations: 64
+Total policy iterations: 65
+Total policy iterations: 66
+Total policy iterations: 67
+Total policy iterations: 68
+Total policy iterations: 69
+Total policy iterations: 70
+Total policy iterations: 71
+Total policy iterations: 72
+Total policy iterations: 73
+Total policy iterations: 74
+Total policy iterations: 75
+Total policy iterations: 76
+Total policy iterations: 77
+Total policy iterations: 78
+Total policy iterations: 79
+Total policy iterations: 80
+Total policy iterations: 81
+Total policy iterations: 82
+Total policy iterations: 83
+Total policy iterations: 84
+Total policy iterations: 85
+Total policy iterations: 86
+Total policy iterations: 87
+Total policy iterations: 88
+Total policy iterations: 89
+Total policy iterations: 90
+Total policy iterations: 91
+Total policy iterations: 92
+Total policy iterations: 93
+Total policy iterations: 94
+Total policy iterations: 95
+Total policy iterations: 96
+Total policy iterations: 97
+Total policy iterations: 98
+Total policy iterations: 99
+Total policy iterations: 100
+Policy Iteration,1409,1059,154,14,15,15,11,10,12,9,9,10,11,11,10,11,9,18,11,13,10,11,18,24,19,12,12,13,13,11,16,12,10,12,18,17,14,10,20,14,9,9,14,11,11,11,12,13,11,12,11,13,9,9,9,10,10,14,11,11,12,14,13,12,10,10,11,12,9,9,11,12,9,10,10,11,10,9,12,10,10,11,13,16,12,13,12,9,9,9,12,9,10,12,11,13,9,9,11,11
+Passes: 13
+
+This is your optimal policy:
+num of rows in policy is 5
+[>,>,>,>,>]
+[^,*,*,*,^]
+[^,<,<,*,^]
+[*,^,*,*,^]
+[>,>,>,>,^]
+
+
+
+//Q Learning Analysis//
+Q Learning,63,50,61,109,56,20,14,17,22,20,15,67,9,11,11,18,9,13,25,11,22,10,15,12,11,10,10,15,10,12,10,10,16,12,11,13,55,13,9,14,11,13,36,17,15,14,24,17,21,27,24,11,17,23,17,32,32,13,24,10,11,20,15,12,12,14,11,13,27,10,28,19,9,15,16,16,10,56,28,17,28,10,13,36,12,40,16,15,23,17,9,17,13,12,9,13,14,10,12,13
+Passes: 13
+
+This is your optimal policy:
+num of rows in policy is 5
+[>,v,v,>,<]
+[>,*,*,*,^]
+[<,^,v,*,^]
+[*,v,*,*,^]
+[>,>,>,>,^]
+
+
+
+//Aggregate Analysis//
+
+The data below shows the number of steps/actions the agent required to reach 
+the terminal state given the number of iterations the algorithm was run.
+Iterations,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+Value Iteration,941,123,170,27,12,9,13,10,19,10,12,17,16,14,20,13,12,10,9,11,9,11,10,12,10,9,11,12,12,9,13,19,9,12,11,17,13,9,13,11,10,18,13,9,11,16,9,13,11,11,11,10,14,9,11,17,11,10,10,12,12,9,9,12,9,13,11,17,14,10,9,14,9,14,12,12,11,9,12,15,10,12,10,13,14,13,11,11,12,16,13,11,11,11,16,21,12,11,9,10
+Policy Iteration,1409,1059,154,14,15,15,11,10,12,9,9,10,11,11,10,11,9,18,11,13,10,11,18,24,19,12,12,13,13,11,16,12,10,12,18,17,14,10,20,14,9,9,14,11,11,11,12,13,11,12,11,13,9,9,9,10,10,14,11,11,12,14,13,12,10,10,11,12,9,9,11,12,9,10,10,11,10,9,12,10,10,11,13,16,12,13,12,9,9,9,12,9,10,12,11,13,9,9,11,11
+Q Learning,63,50,61,109,56,20,14,17,22,20,15,67,9,11,11,18,9,13,25,11,22,10,15,12,11,10,10,15,10,12,10,10,16,12,11,13,55,13,9,14,11,13,36,17,15,14,24,17,21,27,24,11,17,23,17,32,32,13,24,10,11,20,15,12,12,14,11,13,27,10,28,19,9,15,16,16,10,56,28,17,28,10,13,36,12,40,16,15,23,17,9,17,13,12,9,13,14,10,12,13
+
+The data below shows the number of milliseconds the algorithm required to generate 
+the optimal policy given the number of iterations the algorithm was run.
+Iterations,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+Value Iteration,103,3,2,4,4,5,5,9,5,6,7,6,12,6,8,12,10,14,14,40,11,13,17,14,37,15,19,10,14,175,18,160,45,29,14,15,16,15,17,35,18,19,16,20,18,16,12,15,23,25,21,88,54,43,25,21,86,23,19,16,15,15,18,16,16,18,15,18,60,24,15,17,24,28,59,92,52,40,20,18,16,17,45,27,23,21,24,21,17,16,16,18,17,40,37,22,24,18,19,75
+Policy Iteration,14,4,6,6,69,11,12,18,14,16,17,40,14,14,16,46,19,17,16,17,18,18,24,19,17,13,14,50,81,57,33,18,13,44,25,26,16,21,14,17,17,18,17,25,75,32,22,21,23,21,19,19,30,99,26,33,22,24,28,28,36,29,25,26,29,27,28,28,35,27,29,42,39,34,31,65,75,121,75,41,35,40,32,54,64,47,42,44,63,59,47,44,39,78,64,56,45,107,58,44
+Q Learning,151,8,8,25,4,4,25,24,4,8,8,6,23,6,78,4,3,5,4,4,3,5,5,5,6,5,9,6,4,5,6,7,6,7,8,4,9,4,3,4,21,6,9,30,7,6,6,6,7,6,7,8,9,4,6,5,7,6,8,6,7,6,8,6,5,5,7,7,7,5,5,6,7,6,7,6,6,6,9,6,6,6,8,8,5,6,10,7,7,8,9,15,10,16,10,8,7,6,6,7
+
+The data below shows the total reward gained for 
+the optimal policy given the number of iterations the algorithm was run.
+Iterations,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+Value Iteration Rewards,-839.0,-21.0,-68.0,75.0,90.0,93.0,89.0,92.0,83.0,92.0,90.0,85.0,86.0,88.0,82.0,89.0,90.0,92.0,93.0,91.0,93.0,91.0,92.0,90.0,92.0,93.0,91.0,90.0,90.0,93.0,89.0,83.0,93.0,90.0,91.0,85.0,89.0,93.0,89.0,91.0,92.0,84.0,89.0,93.0,91.0,86.0,93.0,89.0,91.0,91.0,91.0,92.0,88.0,93.0,91.0,85.0,91.0,92.0,92.0,90.0,90.0,93.0,93.0,90.0,93.0,89.0,91.0,85.0,88.0,92.0,93.0,88.0,93.0,88.0,90.0,90.0,91.0,93.0,90.0,87.0,92.0,90.0,92.0,89.0,88.0,89.0,91.0,91.0,90.0,86.0,89.0,91.0,91.0,91.0,86.0,81.0,90.0,91.0,93.0,92.0
+Policy Iteration Rewards,-1307.0,-957.0,-52.0,88.0,87.0,87.0,91.0,92.0,90.0,93.0,93.0,92.0,91.0,91.0,92.0,91.0,93.0,84.0,91.0,89.0,92.0,91.0,84.0,78.0,83.0,90.0,90.0,89.0,89.0,91.0,86.0,90.0,92.0,90.0,84.0,85.0,88.0,92.0,82.0,88.0,93.0,93.0,88.0,91.0,91.0,91.0,90.0,89.0,91.0,90.0,91.0,89.0,93.0,93.0,93.0,92.0,92.0,88.0,91.0,91.0,90.0,88.0,89.0,90.0,92.0,92.0,91.0,90.0,93.0,93.0,91.0,90.0,93.0,92.0,92.0,91.0,92.0,93.0,90.0,92.0,92.0,91.0,89.0,86.0,90.0,89.0,90.0,93.0,93.0,93.0,90.0,93.0,92.0,90.0,91.0,89.0,93.0,93.0,91.0,91.0
+Q Learning Rewards,39.0,52.0,41.0,-7.0,46.0,82.0,88.0,85.0,80.0,82.0,87.0,35.0,93.0,91.0,91.0,84.0,93.0,89.0,77.0,91.0,80.0,92.0,87.0,90.0,91.0,92.0,92.0,87.0,92.0,90.0,92.0,92.0,86.0,90.0,91.0,89.0,47.0,89.0,93.0,88.0,91.0,89.0,66.0,85.0,87.0,88.0,78.0,85.0,81.0,75.0,78.0,91.0,85.0,79.0,85.0,70.0,70.0,89.0,78.0,92.0,91.0,82.0,87.0,90.0,90.0,88.0,91.0,89.0,75.0,92.0,74.0,83.0,93.0,87.0,86.0,86.0,92.0,46.0,74.0,85.0,74.0,92.0,89.0,66.0,90.0,62.0,86.0,87.0,79.0,85.0,93.0,85.0,89.0,90.0,93.0,89.0,88.0,92.0,90.0,89.0
