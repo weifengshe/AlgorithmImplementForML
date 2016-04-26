@@ -1,0 +1,149 @@
+---
+title: "Information_theory"
+author: "Weifeng She"
+date: "April 26, 2016"
+output: html_document
+---
+### Information Theory
+
+Where is information theory used in machine learning? 
+
+how input (x1, x2, x3) related to output of y? are these input vectors similar? "mutual information"
+
+In machine learning context, "information" in information theory means every input vector and output vector can be considered as a probability density function. So information theory is a mathematical framework allow us to compare these density functions. 
+
+we can ask questions like these:
+
+are there input vectors similar? 
+
+this can be answered by measuring "mutual information"
+
+Does this feature have any information? 
+
+This can be answered by measuring "entropy" 
+
+#### Information theory established by Claude Shannon
+
+Example: Which message has more information?
+
+10 fair coin flip: HTHHTHTTHT  size of the information: 10 bits
+10 Head coin flip: HHHHHHHHHH  size of the information : 0 bits
+
+if a sequency has less uncertainty, then it has less information, It is described as entropy by Shannon
+
+what is the minimal amount of yes or no questions you have to ask in order to know the sequence of symbols
+first one needs to ask at least 10 question, second don't need to ask any question
+
+
+Which message has more information? 
+
+|letter | use percentage | encode |
+|-----:|---------------:|-------:|
+| A | 25% | 00 |
+| B | 25% | 01 |
+| C | 25% | 10 |
+| D | 25% | 11 |
+
+2 bits /symbol
+010011 - BAD,  2 bits /symbol that is 2 yes or no questions/symbol
+
+The best way to represent these letter
+
+|letter | use percentage | encode|
+------:|----:|------------------:|
+| A | 50% | 0 |
+| B | 12.5% | 10 |
+| C | 12.5% | 110 |
+| D | 25% | 111 |
+
+
+variable length encoding:  expected number of bit equals sum of the probability seeing that symbol times size of letter required to transmit that symbol  P(S) * #(s) 
+
+= 1 *P(A) + 2 * P(D) + 3 * P(B) + 3 * P(C)
+= 1 * 0.5 + 2 * 0.25 + 3 * 0.125 ++ 3 * 0.125
+= 0.5 + 0. 5 + 0.375 + 0. 375 = 1.75 bits
+
+Entropy: E P(s) X #(s) = E P(s) X LOG 1/P(s) = - E P(s) X log P(s)
+
+#### Information between tow variable
+
+Joint entropy: the randomness contained in two variables together as given
+H(x, y) = - E P(x, y) log(x, y)
+
+conditional entropy: a measure of the randomness of one variable given the other variable
+H(y|x) = - E P(x, y) log(y|x)
+
+if x and y independent
+If x||y, H(y|x) = H(y) conditional entropy
+H(x,y) = H(x) + H(y) joint entropy
+
+#### muataul information
+
+conditional entropy is not an adequate measure of independence, H(y|x) maybe small if x tells us a great deal abouty or H(y) is small beginning with
+
+I(x, y) = H(y) - H(x|y) the information of y given x equals entropy of y substract the entropy of x given y, mutual information is measure of the reduction of randomness of variable given the information of other variable
+
+* quiz 1: 2 independent coins
+
+P(A) = P(B) = 0.5
+
+P(A, B) = P(A) * P(B) = 0.5 * 0.5 = 0.25 independent : joint prob
+
+P(A|B) = P(A) = 0.5 independent: conditional
+
+H(A) = - EP(A) logP(A) = -0.5 * log 0.5 - 0.5 * lgog 0.5  = 1 
+
+H(A, B) = - EP(A, B)log P(A, B) = -4 (0.25 log0.25) = 2
+
+H(A|B) = - E P(A, B) log P(A|B) = -4 (0.25 log 0.5) = 1
+
+I(A, B) = H(A) - H(A, B) = 1 - 1 = 0 since two coins are mutual independent, there is no mutual information between them
+ 
+
+* Quiz 2 dependent coins coin B is totally dependent on A
+
+P(A) = P(B)  = 0.5, A turn to head, B also turn to head
+
+P(A, B) = 0.5, both can be head or tail
+
+P(A|B) = P(A, B) / P(B) = 1
+
+H(A) = - EP(A) logP(A) = 1
+
+H(A, B) = - E P(A, B) logP(A, B) = -2 (0.5 log0.5) = 1
+
+H(A|B) = - E P(A, B) log P(A|B) = -2(0.5 log 1) = 0
+
+I(A, B) = H(A) - H(A|B) = 1 - 0 = 1
+
+#### Kullback - Leibler Divergence
+
+mutual information is a perticular case of KL Divergance. So KL divergence measurees the difference between any two distributions. served as distance measure. always used in supervised learning. In that case, our distribution is well known distribution, denoted as p(x) and sample q(x). Then we can use KL Divergence substitute least square formula 
+
+KL is always non negative, zero when q equals to q
+
+$D(p||q) = P(x) log (P(x) / q(x))$
+
+
+#### Summary:
+
+Information 
+
+Entropy
+
+Joint entropy
+
+conditional entropy
+
+mutual information
+
+KL divergence
+
+
+
+
+
+
+
+
+
