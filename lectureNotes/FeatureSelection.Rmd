@@ -1,143 +1,74 @@
 ---
-title: "UL4 - Feature transformation"
+title: "UL 3 Feature Selection"
+
 author: "Weifeng She"
 
 output: html_document
 ---
+
 #### introduction
 
-* the problem of pre-processing a set of feature to create a new (smaller and more compact) feature set while retaining as much (relevant? useful? ) information as possible:
+* Knowledge Discovery: interpretability & insight (only a few matter)
+* Curse of Dimensionality
 
-x ~ $F^N$ -> $F^M$
+#### Feature Selection: Algorithm
 
-M < N (usually, almost always),  $P^T X$ (usually)
+starting with n features, to get m features 
 
-Goal here is find some matrix P, such that we can project our instances into this new subspace and we can get some new feature of the combination of the old features
+N features -> m features for  m <= n
 
-examples:
+How hard is the problem: exponential NP-hard
 
-feature selection: from [x1, x2, x3, x4] -> [x1, x2]
+two ways to tackle: Filtering and wrapping
 
-feature transformation: from [x1, x2, x3, x4] -> [2x1 + x2]
+Filtering:set of features as input,  passed in certain search algorithm, output some features and passed in learning aglorithm
 
-#### why we need to do feature transformation
+Wrapping: take the set of features, search over subset of features, ask learning algorithm to do something on it, 
+learning algorithm reports how well it does, use that to update the new subset feature it might look for 
+because search wrapping around learning algorithm
 
-information retrieval
+Filtering: no feedback
 
-what is ad hoc query problem (google problem)?
+filter:
 
-from bounch of document to retrieval some relavent subset of document according to the query 
+pros : speed, it is faster than wrapping, by making approximation,
 
-* what are the features in ad hoc problem?
+cons: looking feature as isolation and ignore the learning problem
 
-words, punctuation, 
+filtering search algorithm:  decision tree could be used as filter search algorithm and give you a subset of the feature
 
-lot of words, curse of dimensionality
+wrapping: 
 
-preperties: good indicator, not good, but inssuficient indicator 
+pros: takes into account model bias and learning 
 
-words mean multiple things -> polysemy, error:  false positive
+cons: much slower
 
-many words means same thing -> synonomy, error: false negative
+* feature selection criteria: 
 
-EXample: 
+information gain(conditional entropy, depend on labels),
 
-car -> automobile, also means fisrt element in cons cells of LISP, 
+variance, entropy(doesn't depond on labels), "useful" features, independent/non-redondant features
 
-car and automobile could be meaning the same thing
+don't take advantage of the learner
 
-feature transformation is the ability to combine these features into a new space to elimilate false positive and false negative by combining words together
+* algorithms can be used by wrapping:
 
-Example: type word car, could pick up automobile, car, 
+hill climbing, 
+randomized optimization,
+forward search and backward search
 
-#### Principal components analysis
+#### Relevance vs usefulness
 
-* eigen problem
+* Relevance measures effect on bayes optimmal classifier, relevance is all about informaiton
 
-find direction that maximizes the data variance, maximize variances then find mutually orthogonal, 
-Therefore PCA is global algorithms and it gives the best reconstruction of original data
+* usefullness measures effect on a particular predictor
 
-if we only project on the first principal component, then reproject back to original space, we minimize the L2 error by moving from N dimension to M dimension
 
-when you doing PCA, with each new dimension, which associated with its eigen value, that ** eigen value is garrented non-negative , it has a lot of other neat properties. Eigen value is monotonically non-increase when you move from first to second and so on. **
+* feature selection 
 
-if eigen value is zero, it will not provide any information for original space. It is irrelevant
+* filtering vs Wrapping, wrapping is slow and useful, filter is faster ignores bias
 
-it is well studied. 
-what is the relationship with classification
+* relevance: things give you information about the classification you care about. useful: things help you learning given some specific algorithms
 
-#### independent component analysis
+* strong and weak relevance
 
-fundamental assumption of ICA is there are hidden variables. They have properties that are associated with them.Their random variables are mutually independent of one another. What we see are observables. This observable are given rise by the value of hidden variables and they combine into a linear fashion. Our job is given these observables, try to find the hidden variables. Assumption is hdden variables are independent of one other. 
-
-* PCA, maximize correlation, maximizing variance -> reconstruction
-
-* ICA maximize independence,
-
-transfermation [x, x2, xi...] --> [y1, y2, yi ...], such that mutual information between I(xi, yi) = 0
-
-quiz: mark the feature for either PCA or ICA
-
-* mutually orthogonal: PCA, defining properties of PCA, 
-
-* mutually independent: ICA, defining properties of ICA
-
-* maximal variance: PCA, 
-
-defining properties of PCA, try to find uncorelated, ICA does not care maximize variance,
-PCA tries to find uncorelated, not trying to find statistically independent 
-
-when data is guassian,  maximizing variance is in fact do the normal distribution
-
-But when you take many statistically independent variables and add them together and that could turn to a normal Gaussian distribution according to the law of big number and central limit theorem
-
-when you doing ICA, should not maximize variance 
-
-another assumption for ICA variable is highly non -normally distributed, so adding up to Gaussian is not the right thing to do.
-
-* maxiaml mutual informaiton: ICA
-
-joint mutual information of all the original features together and all of the tranfered features  
-for PCA, maximal reconstruction 
-
-* ordered features: PCA
-
-In PCA, taking the maximum variance dimension first, then the largest remaining feature next
-
-ICA, does not notion one is important than others. However in practice, ICA try to use kurtosis to order features, which is fourth central moment of distribution
-
-* bag of feature: could be PCA or ICA
-
-### features of PCA vs ICA
-
-Blind sourse seperation problem, ICA did excellent job, PCA did terrible
-
-ICA is highly directional, PCA not
-
-Faces example: PCA doing in the order:  birghtness, average face
-
-ICA: nose, eyes, month, hair tends to find parts, PCA find global, ICA finds local
-
-Example of natrual scence:  PCA tend to find birghtness, averge image thing, ICA find something more foundemental, edges detectors
-
-#### alternative
-
-RCA: random components analysis (projection) generates random directions:
-
-$P^T X$, still could pick up some correlations, works very well for classification
-
-m for RCA tends to be bigger than m from PCA
-
-big advantage of RCA: cheap, easy, fast
-
-LDA: linear discriminant analysis, find a projection that discriminates based on the label
-
-#### what have we learned:
-
-A is for analysis! PCA, ICA, LDA, RCA
-
-RELATIONS,between different transformation
-
-analysis of the data -> underlining structure of the data
-
-probability vs linear algebra is (ICA vs. PCA)

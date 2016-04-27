@@ -1,7 +1,7 @@
 ---
 title: "Information_theory"
 author: "Weifeng She"
-date: "April 26, 2016"
+
 output: html_document
 ---
 ### Information Theory
@@ -122,7 +122,7 @@ mutual information is a perticular case of KL Divergance. So KL divergence measu
 
 KL is always non negative, zero when q equals to q
 
-$D(p||q) = P(x) log (P(x) / q(x))$
+$D(p||q) = P(x) log (P(x)/ q(x))$
 
 
 #### Summary:
